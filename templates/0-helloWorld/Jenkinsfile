@@ -5,7 +5,7 @@ Alternative, the Shared Library can be coconfigured either on folder level or Co
 **/
 
 env.SHAREDLIB_GIT_SERVER = env.SHAREDLIB_GIT_SERVER ?: "https://github.com"
-env.SHAREDLIB_GIT_ORG = env.SHAREDLIB_GIT_ORG ?: "pipeline-training-ws"
+env.SHAREDLIB_GIT_ORG = env.SHAREDLIB_GIT_ORG ?: "mawuku-pipeline-training-ws"
 env.SHAREDLIB_GIT_REPO = env.SHAREDLIB_GIT_REPO ?: "shared-library"
 env.SHAREDLIB_GIT_TAG_DEFAULT = env.SHAREDLIB_GIT_TAG_DEFAULT ?: "main" //"dev"
 env.SHAREDLIB_GIT_CREDENTIALS = env.SHAREDLIB_GIT_CREDENTIALS ?: "gh-pat" //  for MB Pipeline this should  be  an github-app rather than a pat token

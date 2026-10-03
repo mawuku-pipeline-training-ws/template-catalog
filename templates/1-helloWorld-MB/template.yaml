@@ -11,7 +11,7 @@ parameters:
   - name: organisation
     displayName: GH Organisation
     type: string
-    defaultValue: pipeline-training-ws
+    defaultValue: mawuku-pipeline-training-ws
   - name: githubToken
     displayName: GitHubUserToken
     type: CREDENTIALS

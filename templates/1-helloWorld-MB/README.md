@@ -18,7 +18,7 @@ Instead of a fixed `library` declaration, this Jenkinsfile resolves the Shared L
 
 ```groovy
 env.SHAREDLIB_GIT_SERVER = env.SHAREDLIB_GIT_SERVER ?: "https://github.com"
-env.SHAREDLIB_GIT_ORG = env.SHAREDLIB_GIT_ORG ?: "pipeline-training-ws"
+env.SHAREDLIB_GIT_ORG = env.SHAREDLIB_GIT_ORG ?: "mawuku-pipeline-training-ws"
 env.SHAREDLIB_GIT_REPO = env.SHAREDLIB_GIT_REPO ?: "shared-library"
 env.SHAREDLIB_GIT_TAG_DEFAULT = env.SHAREDLIB_GIT_TAG_DEFAULT ?: "main"
 env.SHAREDLIB_GIT_CREDENTIALS = env.SHAREDLIB_GIT_CREDENTIALS ?: "gh-pat"
@@ -27,7 +27,7 @@ env.SHAREDLIB_GIT_CREDENTIALS = env.SHAREDLIB_GIT_CREDENTIALS ?: "gh-pat"
 | Variable                    | Default                  | Purpose                                                        |
 | ---------------------------- | ------------------------- | --------------------------------------------------------------- |
 | `SHAREDLIB_GIT_SERVER`       | `https://github.com`      | Git server hosting the Shared Library                          |
-| `SHAREDLIB_GIT_ORG`          | `pipeline-training-ws`    | Organization/user owning the Shared Library repo                |
+| `SHAREDLIB_GIT_ORG`          | `mawuku-pipeline-training-ws`    | Organization/user owning the Shared Library repo                |
 | `SHAREDLIB_GIT_REPO`         | `shared-library`          | Shared Library repository name                                  |
 | `SHAREDLIB_GIT_TAG_DEFAULT`  | `main`                    | Branch/tag loaded when `SHAREDLIB_GIT_TAG` isn't set             |
 | `SHAREDLIB_GIT_CREDENTIALS`  | `gh-pat`                  | Credentials ID used to fetch the library                        |
@@ -54,7 +54,7 @@ Declared in [`template.yaml`](template.yaml). This template has `templateType: M
 | Parameter     | Type        | Default                | Display name        |
 | ------------- | ----------- | ----------------------- | -------------------- |
 | `repoName`    | `string`      | `sample-app-helloWorld` | Git Repository       |
-| `organisation`| `string`      | `pipeline-training-ws`  | GH Organisation       |
+| `organisation`| `string`      | `mawuku-pipeline-training-ws`  | GH Organisation       |
 | `githubToken` | `CREDENTIALS` | `gh-app`                | GitHubUserToken       |
 
 These feed the `multibranch.branchSource.github` block (`repoOwner`, `repository`, `credentialsId`) and the `markerFile: ci-config.yaml` setting — see [`template.yaml`](template.yaml) and the [CloudBees docs on MultiBranch template parameters](https://docs.cloudbees.com/docs/admin-resources/latest/pipeline-templates-user-guide/managing-multibranch-pipeline-options#_example).
